@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+# add your autostart stuffs here
+
+picom -o 0.95 -i 0.88 --detect-rounded-corners --vsync --blur-background-fixed -f -D 5 -c -b &
+xrdb merge ~/Public/xresources/xresources &
+feh --bg-tile ~/Pictures/wallpapers/RN.png &
+fcitx5 &
+
+# run bar script and dwm ( do not remove this )
+/opt/Rdwm/scripts/bar/./bar.sh &
+dwm
